@@ -4,6 +4,15 @@ You can access the website [here](http://bq-lamplab.site/).
 
 ## **Description**
 
+COLORS is a basic website that allows the user to:
+- Create an account or Log in with an existing account
+- Access a database filled with various colors
+- Search the database for a desired color or colors
+- Add a new color to the database
+- Search for any newly added color(s)
+- Remove a desired color from the database
+- Log out when finished using the site
+
 ## **Technologies Used**
 
 ## **How to Use**
