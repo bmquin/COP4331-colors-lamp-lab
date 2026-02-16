@@ -15,6 +15,15 @@ COLORS is a basic website that allows the user to:
 
 ## **Technologies Used**
 
+The primary technology used for this project includes:
+- HTML, CSS, and Javascript for the front-end of the website
+- A DigitalOcean Droplet, a cloud-based virtual machine for hosting the LAMP (Linux, Apache, MySQL, PHP) stack
+- Linux to access the Droplet and run the LAMP stack
+- Apache to host the server itself and directly communicate between the website and server
+- MySQL to store the data in a database
+- PHP for communication between the front-end and the database
+
+
 ## **How to Use**
 
 ## **AI Usage Disclosure, Assumptions, Limitations**
