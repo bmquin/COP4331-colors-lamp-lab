@@ -24,7 +24,23 @@ The primary technology used for this project includes:
 - PHP for communication between the front-end and the database
 
 
+## **How to Set Up**
+
+1. Create LAMP Environment (remote or local, either works)
+2. Create MySQL Database to store colors
+3. Create tables for colors and user, for colors this includes the color name and color id, for the user table, this includes firstname, lastname, a username, and a password
+4. Update your credential inside api files
+5. Place all project files into the web directory folder in Apache (usually, this is /var/www/html)
+6. Restart Apache and open the site in your browser
+
 ## **How to Use**
+
+1. Stary by navigating to the site in your browser (such as by using the link [here](http://bq-lamplab.site/) or running it locally)
+2. Log in using the credentials you created in the database
+3. After logging in, you can:
+- Change your username
+- Add and delete colors
+- Search for colors in the database
 
 ## **AI Usage Disclosure, Assumptions, Limitations**
 
