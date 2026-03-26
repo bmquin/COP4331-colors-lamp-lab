@@ -1,0 +1,47 @@
+@startuml
+skinparam ConditionEndStyle hline
+
+start
+:Access Website;
+if (Cookie "userId" exists?) then (yes)
+  :Redirect to color.html;
+else (no)
+  :Stay on index.html;
+  if (New User?) then (yes)
+    :Navigate to Registration;
+    :Submit Registration Details;
+    :Record saved in Database;
+  endif
+  repeat
+    :Enter Login Credentials;
+    :Click Login (doLogin);
+    :Send Request to Login.php;
+  backward:Display Error Message;
+  repeat while (Valid userId returned?) is (no)
+  :Save Cookie (userId, firstName, lastName);
+  :Redirect to color.html;
+endif
+
+:Load color.html;
+:Invoke readCookie();
+
+repeat
+  if (User Action) then (Search)
+    :Enter Search Text;
+    :Invoke searchColor();
+    :API Call to SearchColors.php;
+    :Update UI with result list;
+  elseif (Add)
+    :Enter New Color Name;
+    :Invoke addColor();
+    :API Call to AddColor.php;
+    :Display success/failure;
+  elseif (Logout)
+    :Invoke doLogout();
+    :Clear browser Cookie;
+    :Redirect to index.html;
+    detach
+  endif
+repeat while (User stays on page)
+
+@enduml
