@@ -1,0 +1,48 @@
+@startuml
+
+left to right direction
+skinparam actorStyle awesome
+
+actor "User" as user
+
+rectangle "Colors Lamp Lab System" {
+  
+  rectangle "Account Access"{
+    usecase "Login" as UC2
+    usecase "Create Account" as UC1
+    usecase "Save username and password" as UC7
+  }
+  
+  rectangle "Modify Colors"{
+    usecase "Search Color" as UC3
+    usecase "Add Color" as UC4
+    usecase "Display Color" as UC8
+    usecase "Remove Color" as UC5
+    usecase "Logout" as UC6
+  }
+
+    database "MySQL Database" as db
+
+}
+
+
+user --> UC1
+UC1 --> UC7
+UC7 --> db
+
+user --> UC2
+
+user --> UC3
+UC3 --> db
+db --> UC8
+UC8 --> user
+
+user --> UC4
+UC4 --> db
+
+user --> UC5
+UC5 --> db
+
+user --> UC6
+
+@enduml
