@@ -52,5 +52,5 @@ This project was developed with assistance from generative AI tools:
 
 - **Tool**: Claude Sonnet 4.6
 - **Dates**: April 7th, 2026
-- **Scope**: Explanation and generation of github workflow lint.yml file to assist in linting HTML, CSS, and Javascript files during pushing and pulling to main, as well as explanation of files to exclude in .gitignore
-- **Use**: Claude explained how to create, and then generated, a yaml file for automatic linting of HTML, CSS, and Javascript files when pushing and pulling to main using Github Workflow, as well as an explanation of files related to the linting process to exclude in .gitignore
+- **Scope**: Explanation and generation of github workflow lint.yml file to assist in linting HTML, CSS, and Javascript files during pushing and pulling to main, creation of linting configuration files (.htmlhintrc, .stylelintrc.json, and eslint.config.js), as well as explanation of files to exclude in .gitignore
+- **Use**: Claude explained how to create, and then generated, a yaml file for automatic linting of HTML, CSS, and Javascript files when pushing and pulling to main using Github Workflow, how to configure the linting configuration files, as well as an explanation of files related to the linting process to exclude in .gitignore
