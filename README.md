@@ -49,3 +49,8 @@ This project was developed with assistance from generative AI tools:
 - **Dates**: February 15, 2026
 - **Scope**: Explanation and generation of .gitignore to prevent uploading of sensitive files to GitHub Repository, and creation of .env.example file for later potential development without leaking sensitive information
 - **Use**: Gemini provided and explanation of good .gitignore practices for a LAMP stack website such as the COLORS LAMP lab site, and then generated a list of .gitignore files and directories to include, as well as an .env.example file to be used when the repo is cloned and used for development.
+
+- **Tool**: Claude Sonnet 4.6
+- **Dates**: April 7th, 2026
+- **Scope**: Explanation and generation of github workflow lint.yml file to assist in linting HTML, CSS, and Javascript files during pushing and pulling to main, creation of linting configuration files (.htmlhintrc, .stylelintrc.json, and eslint.config.js), as well as explanation of files to exclude in .gitignore
+- **Use**: Claude explained how to create, and then generated, a yaml file for automatic linting of HTML, CSS, and Javascript files when pushing and pulling to main using Github Workflow, how to configure the linting configuration files, as well as an explanation of files related to the linting process to exclude in .gitignore

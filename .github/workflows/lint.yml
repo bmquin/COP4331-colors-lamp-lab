@@ -1,0 +1,38 @@
+#This file was created using AI, check README for proper attribution
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+      - a4-linting
+  pull_request:
+    branches:
+      - main
+      - a4-linting
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint HTML
+        run: npm run lint:html
+
+      - name: Lint CSS
+        run: npm run lint:css
+
+      - name: Lint JavaScript
+        run: npm run lint:js
