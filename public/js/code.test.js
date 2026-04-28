@@ -13,7 +13,7 @@ const extension = 'php';
 
 // Helper function to validate color format
 function validateColorInput(colorText) {
-  return colorText && colorText.trim().length > 0;
+  return !!(colorText && colorText.trim().length > 0);
 }
 
 // Helper function to format color string
